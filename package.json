@@ -1,0 +1,16 @@
+{
+  "name": "barista-cafe",
+  "version": "1.0.0",
+  "description": "This project is written by Ali Maleki using css, scss and bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss/ -o css/ -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "node-sass": "^9.0.0"
+  }
+}
