@@ -2,61 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/home.css" />
 </head>
 
-<body dir="rtl">
-    <main>
-        <!-- header start -->
-        <header>
-            <!-- nav start -->
-             <div class="container">
-                
-                    <nav class="col-9 fixed-top bg-white p-4 mx-auto mt-4 rounded-4 d-flex">
+<body>
+  <main>
+    <!-- header start -->
+    <header>
+      <!-- nav start -->
+      <div class="container">
 
-                        <div class="ms-lg-3">
-                            <a class="btn custom-btn custom-border-btn" href="reservation.html">
-                                Reservation
-                                <i class="bi-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
-                        <ul class="nav justify-content-start w-50 bg-black">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">خانه</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">درباره ما</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">منو</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">نظرات</a>
-                            </li>
-                          </ul>
-                          
+        <nav class="navbar col-10 fixed-top mx-auto mt-4 p-3 rounded-4 navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.466);">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="./home.html">
+              <img src="assets/images/coffee-beans.png" alt="Logo" width="55" height="51" class="d-inline-block align-text-top" style="filter: brightness(0) invert(1);">
+              <span>باریستا</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
 
-                    </nav>
-                </div>
-            <!-- nav end -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link mx-3" href="./contact-us.html">ارتباط با ما</a>
+                <a class="nav-link mx-3" href="#">نظرات</a>
+                <a class="nav-link mx-3" href="#">منو</a>
+                <a class="nav-link mx-3" href="./about-us.html">درباره ما</a>
+                <a class="nav-link active me-5 ms-3" aria-current="page" href="./home.html">خانه</a>
 
-            <div class="backgraound-1 w-100">
-                <img src="./assets/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
-                    alt="waiter giving coffee" class="col-12" />
+                <a href="./reservation.html" style="text-decoration: none;">
+                  <button class="btn reserve rounded-5 pe-5 ps-5 pb-3" style="border: 2px solid white;">
+                    <span>رزرو</span>
+                  </button>
+                </a>
+              </div>
             </div>
-        </header>
-        <!-- header end -->
+          </div>
+        </nav>
+      </div>
+      <!-- nav end -->
+
+      <div class="backgraound-1 w-100">
+        <img src="./assets/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
+          alt="waiter giving coffee" class="col-12" />
+      </div>
+    </header>
+    <!-- header end -->
 
 
 
-    </main>
+  </main>
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
