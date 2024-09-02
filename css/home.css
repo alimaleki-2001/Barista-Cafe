@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: 0;
 }
-
-
-
+button.reserve>span{
+    color: white;
+    font-weight: bold;
+}
+button.reserve,
+button.reserve>span{
+    transition: 0.3s;
+}
+button.reserve:hover{
+    background-color: white;
+}
+button.reserve:hover>span{
+    color: #DDA15E;
+}
