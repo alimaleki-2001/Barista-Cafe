@@ -4,7 +4,33 @@
     box-sizing: 0;
 }
 
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+    }
 
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header>div.backgraounds {
+        background-size: cover;
+    }
+}
 
 
 @font-face {
@@ -22,7 +48,7 @@
 }
 
 
-
+/* navbar start */
 header>div.container>nav>div.container-fluid>a>img {
     filter: brightness(0) invert(1);
 }
@@ -72,10 +98,95 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
     color: #dd9746;
 }
+/* navbar end */
 
-div.backgrounds {
+/* header backgrounds and content start */
+div.backgraounds {
+    width: 100%;
     height: 100vh;
     background-image: url(../assets/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+header>div.backgraounds>div.container {
+    margin-top: 190px;
+}
+
+header>div.backgraounds>div.container>div.lower-bg {
+    opacity: 0.7;
+    transform: rotate(45deg);
+    width: 15%;
+    padding-top: 320px;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(55% - 320px / 2);
+    left: calc(50% - 15% / 2);
+    z-index: 0;
+}
+
+header>div.backgraounds>div.container>div.row {
+    text-align: center;
+    height: 400px;
+    z-index: 1;
+}
+
+header>div.backgraounds>div.container>div.row>em {
+    font-family: Gandom;
+    color: #c47f2fca;
+    font-weight: lighter;
+    word-spacing: 2px;
+}
+
+header>div.backgraounds>div.container>div.row>h1 {
+    font-family: BNazaninBold;
+    font-size: 78px;
+}
+
+header>div.backgraounds>div.container>div.row>p {
+    font-family: Gandom;
+    font-weight: lighter;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-1>button.menu {
+    background-color: #c47f2f;
+    transition: 0.3s;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story>strong,
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-1>button.menu>strong {
+    font-family: BNazaninBold;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-1>button.menu:hover {
+    background-color: #eaaa60;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story {
+    border: 2ps solid white;
+    transition: 0.3s;
+
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story>strong {
+    color: white;
+    transition: 0.3s;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story:hover {
+    background-color: white;
+}
+
+header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story:hover>strong {
+    color: #c47f2f;
+}
+/* header backgrounds and content end */
+
+/* section-1 start */
+div.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #4C3A22;
 }
