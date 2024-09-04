@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 
-@keyframes slideAnimation {
+/* @keyframes slideAnimation {
     0% {
         opacity: 0;
     }
@@ -24,7 +24,7 @@
     100% {
         opacity: 0;
     }
-}
+} */
 
 @media (max-width: 768px) {
     header>div.backgraounds {
@@ -98,6 +98,7 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
     color: #dd9746;
 }
+
 /* navbar end */
 
 /* header backgrounds and content start */
@@ -167,7 +168,6 @@ header>div.backgraounds>div.container>div.row>div.buttons>a.button-1>button.menu
 header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story {
     border: 2ps solid white;
     transition: 0.3s;
-
 }
 
 header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story>strong {
@@ -182,11 +182,54 @@ header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.stor
 header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.story:hover>strong {
     color: #c47f2f;
 }
+
 /* header backgrounds and content end */
 
 /* section-1 start */
-div.section-1{
+div.section-1 {
     width: 100%;
     height: 100vh;
-    background-color: #4C3A22;
+    background-color: #B68751;
 }
+
+div.section-1>div.container {
+    width: 100%;
+    height: 100%;
+}
+
+div.section-1>div.container>div.text {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 65px;
+}
+
+div.section-1>div.container>div.text>em {
+    font-family: Gandom;
+    font-size: 17px;
+    color: white;
+}
+
+div.section-1>div.container>div.text>h1 {
+    font-family: BNazaninBold;
+    font-size: 60px;
+    margin-top: 10px;
+    color: white;
+}
+
+div.section-1>div.container>div.baristas>div.photo-1,
+div.section-1>div.container>div.baristas>div.photo-2,
+div.section-1>div.container>div.baristas>div.photo-3,
+div.section-1>div.container>div.baristas>div.photo-4 {
+    width: fit-content;
+}
+
+div.section-1>div.container>div.baristas>div.photo-1>img,
+div.section-1>div.container>div.baristas>div.photo-2>img,
+div.section-1>div.container>div.baristas>div.photo-3>img,
+div.section-1>div.container>div.baristas>div.photo-4>img {
+    object-fit: cover;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
