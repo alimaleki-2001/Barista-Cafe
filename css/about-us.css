@@ -18,7 +18,8 @@
     src: url(../assets/fonts/Gandom/Gandom.woff);
     src: url(../assets/fonts/Gandom/Gandom.woff2);
 
-/* FONTS END */}
+    /* FONTS END */
+}
 
 /* body {
     background-color: #4c3a22;
@@ -85,7 +86,7 @@ div.section {
 }
 
 div.section>div.container>div.row>div.main-1>div.video,
-div.section>div.container>div.row>div.main-2>div.story{
+div.section>div.container>div.row>div.main-2>div.story {
     margin-top: 20px;
     height: 650px;
 }
@@ -154,12 +155,13 @@ div.section>div.container>div.row>div.main-2>div.story>a>button.baristas>strong 
 div.section>div.container>div.row>div.main-2>div.story>a>button.baristas:hover>strong {
     color: #c47f2f;
 }
+
 /* SECTION END */
 
 /* FOOTER START */
 .footer {
-    background: rgb(136,109,71);
-    background: linear-gradient(0deg, rgba(136,109,71,1) 0%, rgba(76,58,34,1) 100%);
+    background: rgb(136, 109, 71);
+    background: linear-gradient(0deg, rgba(136, 109, 71, 1) 0%, rgba(76, 58, 34, 1) 100%);
     color: white;
 }
 
@@ -199,13 +201,14 @@ footer p {
     font-family: Gandom;
 }
 
-footer strong{
+footer strong {
     font-size: 17px;
 }
 
 p.address {
     font-weight: bolder;
 }
+
 /* FOOTER END */
 
 /* MEDIA START */
@@ -214,4 +217,5 @@ p.address {
         height: unset;
     }
 }
+
 /* MEDIA START */
