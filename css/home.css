@@ -26,11 +26,7 @@
     }
 } */
 
-@media (max-width:768){
-
-}
-
-
+/* FONTS START */
 @font-face {
     font-family: BNazaninBold;
     src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
@@ -44,9 +40,9 @@
     src: url(../assets/fonts/Gandom/Gandom.woff);
     src: url(../assets/fonts/Gandom/Gandom.woff2);
 }
+/* FONTS END */
 
-
-/* navbar start */
+/* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
     filter: brightness(0) invert(1);
 }
@@ -97,9 +93,9 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
     color: #dd9746;
 }
 
-/* navbar end */
+/* NAVBAR END */
 
-/* header backgrounds and content start */
+/* HEADER BACKGROUNDS AND CONTENT START */
 div.backgraounds {
     width: 100%;
     height: 100vh;
@@ -176,9 +172,9 @@ header>div.backgraounds>div.container>div.row>div.buttons>a.button-2>button.stor
     color: #c47f2f;
 }
 
-/* header backgrounds and content end */
+/* HEADER BACKGROUNDS AND CONTENT END */
 
-/* section-1 start */
+/* SECTION-1 START */
 div.section-1 {
     width: 100%;
     height: fit-content;
@@ -288,9 +284,9 @@ div.section-1>div.container>div.baristas>div.photo-4>div.overlay>div.the-text>p 
     font-size: 17px;
 }
 
-/* section-1 end */
+/* SECTION-1 END */
 
-/* section-2 start */
+/* SECTION-2 START */
 div.section-2 {
     width: 100%;
     height: 100vh;
@@ -332,12 +328,13 @@ div.section-2>div.container>div.row>div.coffee>div.menu>em {
     font-size: large;
     color: #ffbb80;
 }
-.menu del{
+
+.menu del {
     color: white;
     font-weight: unset;
 }
 
-.menu .item-name{
+.menu .item-name {
     font-family: Gandom;
     font-weight: bolder;
     font-size: 20px;
@@ -363,12 +360,137 @@ div.section-2>div.container>div.row>div.coffee>div.menu>em {
 .menu ul li:last-child {
     border-bottom: none;
 }
-/* section-2 end */
 
+/* SECTION-2 END */
+
+/* SECTION-3 START */
 div.section-3 {
     width: 100%;
-    height: 200vh;
+    height: fit-content;
     background-color: #7C5B52;
+}
+
+.custom-card {
+    background-color: #c29e74;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #362d27;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url(../assets/images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: BNazaninBold;
+}
+
+.card-text {
+    margin-bottom: 10px;
+    font-family: Gandom;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b88653;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.rating-text {
+    font-size: 1.1rem;
+}
+
+/* SECTION-3 END */
+
+/* FOOTER START */
+.footer {
+    background: rgb(210,145,127);
+    background: linear-gradient(0deg, rgba(210,145,127,1) 0%, rgba(124,91,82,1) 100%);
+    color: white;
+}
+
+.footer .social-icons i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+    color: #ffae66;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.834);
+}
+
+.footer a:hover {
+    color: #ffae66;
+}
+
+.content {
+    text-align: center;
+}
+
+footer span {
+    font-family: BNazaninBold;
+    font-size: 18px;
+}
+
+footer p {
+    font-family: Gandom;
+}
+
+footer strong{
+    font-size: 17px;
+}
+
+p.address {
+    font-weight: bolder;
+}
+/* FOOTER END */
+
+/* MEDIA START */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .profile-info {
+        margin-left: 15px;
+    }
 }
 
 @media (min-width: 554px) {
@@ -376,13 +498,9 @@ div.section-3 {
         display: flex;
         justify-content: space-between;
     }
-    div.section-2{
+
+    div.section-2 {
         height: fit-content;
     }
-
 }
-
-
-
-
-
+/* MEDIA END */
