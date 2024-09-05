@@ -4,6 +4,7 @@
     box-sizing: 0;
 }
 
+/* FONTS START */
 @font-face {
     font-family: BNazaninBold;
     src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
@@ -16,9 +17,14 @@
     src: url(../assets/fonts/Gandom/Gandom.ttf);
     src: url(../assets/fonts/Gandom/Gandom.woff);
     src: url(../assets/fonts/Gandom/Gandom.woff2);
-}
 
-/* navbar start */
+/* FONTS END */}
+
+/* body {
+    background-color: #4c3a22;
+} */
+
+/* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
     filter: brightness(0) invert(1);
 }
@@ -36,7 +42,7 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a {
     transition-duration: 0.3s;
 }
 
-header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.home {
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.about-us {
     color: #dd9746 !important;
 }
 
@@ -68,11 +74,142 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
     color: #dd9746;
 }
-/* navbar end */
 
-/* section-1 start */
-div.section-1{
+/* NAVBAR END */
+
+/* SECTION START */
+div.section {
     width: 100%;
-    height: 100vh;
-    background-color: #4C3A22;
+    height: fit-content;
+    background-color: #4c3a22;
 }
+
+div.section>div.container>div.row>div.main-1>div.video,
+div.section>div.container>div.row>div.main-2>div.story{
+    margin-top: 20px;
+    height: 650px;
+}
+
+/* VIDEO AND DESCRIPTION */
+div.section>div.container>div.row>div.main-1>div.video>div.overlay {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+}
+
+div.section>div.container>div.row>div.main-1>div.video>div.overlay>div.video-description {
+    bottom: 45px;
+    right: 45px;
+}
+
+div.section>div.container>div.row>div.main-1>div.video>div.overlay>div.video-description>h4 {
+    color: white;
+    font-family: BNazaninBold;
+    font-size: 35px;
+}
+
+/* OUR STORY */
+div.section>div.container>div.row>div.main-2>div.story>em {
+    color: rgba(255, 255, 255, 0.797);
+}
+
+div.section>div.container>div.row>div.main-2>div.story>h2 {
+    color: white;
+    font-family: BNazaninBold;
+    font-size: 45px;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>p {
+    color: white;
+    font-family: Gandom;
+    font-size: 17px;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>p>span {
+    color: #dd9746;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>a>button.baristas {
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
+    transition: 0.3s;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>a>button.baristas:hover {
+    background-color: white;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>a>button.baristas>strong {
+    font-family: BNazaninBold;
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+
+div.section>div.container>div.row>div.main-2>div.story>a>button.baristas:hover>strong {
+    color: #c47f2f;
+}
+/* SECTION END */
+
+/* FOOTER START */
+.footer {
+    background: rgb(136,109,71);
+    background: linear-gradient(0deg, rgba(136,109,71,1) 0%, rgba(76,58,34,1) 100%);
+    color: white;
+}
+
+.footer .social-icons i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+    color: #ffae66;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.834);
+}
+
+.footer a:hover {
+    color: #ffae66;
+}
+
+.content {
+    text-align: center;
+}
+
+footer span {
+    font-family: BNazaninBold;
+    font-size: 18px;
+}
+
+footer p {
+    font-family: Gandom;
+}
+
+footer strong{
+    font-size: 17px;
+}
+
+p.address {
+    font-weight: bolder;
+}
+/* FOOTER END */
+
+/* MEDIA START */
+@media (max-width: 992px) {
+    div.section>div.container>div.row>div.main-2>div.story {
+        height: unset;
+    }
+}
+/* MEDIA START */
