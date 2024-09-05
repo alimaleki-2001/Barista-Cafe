@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* FONTS START */
+@font-face {
+    font-family: BNazaninBold;
+    src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
+    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
+    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
+}
+
+@font-face {
+    font-family: Gandom;
+    src: url(../assets/fonts/Gandom/Gandom.ttf);
+    src: url(../assets/fonts/Gandom/Gandom.woff);
+    src: url(../assets/fonts/Gandom/Gandom.woff2);
+
+    /* FONTS END */
+}
+
+/* body {
+    background-color: #4c3a22;
+} */
+
+/* NAVBAR START */
+header>div.container>nav>div.container-fluid>a>img {
+    filter: brightness(0) invert(1);
+}
+
+header>div.container>nav>div.container-fluid>a>span {
+    font-family: BNazaninBold;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a {
+    color: white;
+    font-size: 22px;
+    font-family: BNazaninBold;
+    transition-duration: 0.3s;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.about-us {
+    color: #dd9746 !important;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve {
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>span {
+    all: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: BNazaninBold;
+    transition: 0.4s;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>.bi-arrow-up-right {
+    color: white;
+    transition: 0.4s;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover {
+    background-color: white;
+}
+
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a:hover,
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>span,
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
+    color: #dd9746;
+}
+
+/* NAVBAR END */
