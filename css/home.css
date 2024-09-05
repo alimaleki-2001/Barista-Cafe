@@ -40,6 +40,7 @@
     src: url(../assets/fonts/Gandom/Gandom.woff);
     src: url(../assets/fonts/Gandom/Gandom.woff2);
 }
+
 /* FONTS END */
 
 /* NAVBAR START */
@@ -430,8 +431,8 @@ div.section-3 {
 
 /* FOOTER START */
 .footer {
-    background: rgb(210,145,127);
-    background: linear-gradient(0deg, rgba(210,145,127,1) 0%, rgba(124,91,82,1) 100%);
+    background: rgb(210, 145, 127);
+    background: linear-gradient(0deg, rgba(210, 145, 127, 1) 0%, rgba(124, 91, 82, 1) 100%);
     color: white;
 }
 
@@ -471,13 +472,14 @@ footer p {
     font-family: Gandom;
 }
 
-footer strong{
+footer strong {
     font-size: 17px;
 }
 
 p.address {
     font-weight: bolder;
 }
+
 /* FOOTER END */
 
 /* MEDIA START */
@@ -502,4 +504,5 @@ p.address {
         height: fit-content;
     }
 }
+
 /* MEDIA END */
