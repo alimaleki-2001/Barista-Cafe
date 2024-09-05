@@ -124,6 +124,8 @@ div.section>div.container>div.row>div.main-2>div.story>p {
     color: white;
     font-family: Gandom;
     font-size: 17px;
+    padding-left: 60px;
+    box-sizing: border-box;
 }
 
 div.section>div.container>div.row>div.main-2>div.story>p>span {
