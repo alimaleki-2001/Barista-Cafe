@@ -12,7 +12,7 @@
 
 <body>
     <main>
-             <!-- header start -->
+    <!-- header start -->
     <header>
         <!-- nav start -->
         <div class="container">
@@ -52,6 +52,7 @@
     </header>
     <!-- header end -->
 
+    <!-- BOOKING SECTION START -->
     <section class="booking-section section-padding">
       <div class="container">
           <div class="row">
@@ -62,9 +63,9 @@
                           <div class="col-lg-7 col-12 p-0">
                               <form class="custom-form booking-form" action="#" method="post" role="form">
                                   <div class="text-center mb-4 pb-lg-2">
-                                      <em class="text-white">Fill out the booking form</em>
+                                      <em class="text-white">فرم رزرو را پر کنید</em>
 
-                                      <h2 class="text-white">Book a table</h2>
+                                      <h2 class="text-white">رزرو میز</h2>
                                   </div>
 
                                   <div class="booking-form-body" dir="rtl">
@@ -74,7 +75,7 @@
                                           </div>
 
                                           <div class="col-lg-6 col-12">
-                                              <input type="tel" class="form-control" name="booking-form-phone" placeholder="Phone: 085 456 7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                                              <input type="tel" class="form-control" name="booking-form-phone" placeholder="شماره همراه: ۰٩٢٣۴٥۶٧٨٩" maxlength="11" required>
                                           </div>
 
                                           <div class="col-lg-6 col-12">
@@ -82,17 +83,17 @@
                                           </div>
 
                                           <div class="col-lg-6 col-12">
-                                              <input type="date" name="booking-form-date" id="booking-form-date" class="form-control" placeholder="Date" required="">
+                                              <input type="date" name="booking-form-date" id="booking-form-date" class="form-control" placeholder="تاریخ" required>
                                           </div>
 
                                           <div class="col-lg-12 col-12">
-                                              <input type="number" name="booking-form-number" id="booking-form-number" class="form-control" placeholder="Number of People" required="">
+                                              <input type="number" name="booking-form-number" id="booking-form-number" class="form-control" placeholder="تعداد افراد" min="1" max="20" required>
 
-                                              <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message" placeholder="Comment (Optional)"></textarea>
+                                              <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message" placeholder="نظرات (اختیاری)"></textarea>
                                           </div>
 
                                           <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
-                                              <button type="submit" class="form-control">Submit</button>
+                                              <button type="submit" class="form-control">ثبت</button>
                                           </div>
                                       </div>
                                   </div>
@@ -101,7 +102,6 @@
 
                           <div class="col-lg-5 col-12 p-0">
                               <div class="booking-form-image-wrap">
-                                  
                                   <img src="./assets/images/barman-with-fruits.jpg" class="booking-form-image img-fluid" alt="">
                               </div>
 
@@ -111,8 +111,70 @@
 
               </div>
           </div>
-      </section>
+    </section>
+    <!-- BOOKING SECTION END -->
 
+          <!-- FOOTER START -->
+    <footer class="footer text-white text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+
+          <!-- WHERE TO FIND US? -->
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-0 content">
+            <span class="d-block mb-2">کجا ما را پیدا کنید؟</span>
+            <p class="address">
+              بندرا غرب، بمبئی، مهاراشترا<i class="bi bi-geo-alt ms-2"></i><br>
+              ۴۰۰۰۵۰، هند
+            </p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-0 content">
+            <span class="d-block mb-2">تماس</span>
+            <p style="margin-bottom: 7px;" class="mt-2">
+              <strong>تلفن:</strong>
+              (۶۵) ۳۰۵ ۲۴۰۹ ۶۷۱
+            </p>
+            <p dir="rtl">
+              <strong>ایمیل:</strong>
+              hello@barista.co
+            </p>
+          </div>
+
+          <!-- OPENING HOURS -->
+          <div class="col-lg-4 col-md-12 mb-3 mb-md-0 content">
+            <span class="d-block mb-2">ساعات کاری</span>
+            <ul class="list-unstyled">
+              <li>
+                دوشنبه - جمعه:
+                <strong class="me-1">۹:۰۰ - ۱۸:۰۰</strong>
+              </li>
+              <li>
+                شنبه:
+                <strong class="me-1">۱۱:۰۰ - ۱۶:۳۰</strong>
+              </li>
+              <li>
+                یکشنبه:
+                <strong class="me-1">تعطیل</strong>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="text-center p-3 d-flex justify-content-center gap-2" style="color: rgba(255, 255, 255, 0.779);">
+        <p>باریستا کافه ٢۰٢۴ - طراحی: علی مالکی</p>
+        <i class="bi bi-c-circle"></i>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
 
     </main>
 
