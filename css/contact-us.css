@@ -158,6 +158,7 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
   border: none;
   transition: all 0.3s;
 }
+
 .send-button button[type="submit"]:hover,
 .send-button button[type="submit"]:focus {
   background: #ffffff;
@@ -173,6 +174,7 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 iframe {
   border-radius: 20px;
 }
+
 /* CONTACT US SECTION END */
 
 /* FOOTER START */
@@ -224,6 +226,7 @@ footer strong {
 p.address {
   font-weight: bolder;
 }
+
 /* FOOTER END */
 
 /* MEDIA START */
@@ -232,18 +235,18 @@ p.address {
     height: 145vh;
   }
 
-  .all{
+  .all {
     margin-top: 100px;
   }
 
   .btn-primary {
-   width: 100%;
+    width: 100%;
   }
 
   iframe {
     width: 100%;
   }
-  
+
   .contact-section {
     padding: 30px 0;
   }
@@ -262,17 +265,18 @@ p.address {
     height: 145vh;
   }
 
-  .all{
+  .all {
     margin-top: 100px;
   }
 
   .btn-primary {
     width: 100%;
-   }
+  }
 
-   iframe {
+  iframe {
     width: 100%;
     height: 350px;
   }
 }
+
 /* MEDIA END */
