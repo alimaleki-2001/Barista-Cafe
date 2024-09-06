@@ -43,7 +43,7 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a {
     transition-duration: 0.3s;
 }
 
-header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.about-us {
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.contact-us{
     color: #dd9746 !important;
 }
 
@@ -77,3 +77,70 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 }
 
 /* NAVBAR END */
+
+
+.contact-section {
+    background-image: url(../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form label {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #ccc;
+  }
+  
+  .btn-primary {
+    background-color: #ff6600;
+    border: none;
+  }
+  
+  .map-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  iframe{
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 30px 0;
+    }
+  
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-heading {
+      font-size: 1.5rem;
+    }
+  }
