@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 /* FONTS START */
 @font-face {
-    font-family: BNazaninBold;
-    src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
-    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
-    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
+  font-family: BNazaninBold;
+  src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
+  src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
+  src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
 }
 
 @font-face {
-    font-family: Gandom;
-    src: url(../assets/fonts/Gandom/Gandom.ttf);
-    src: url(../assets/fonts/Gandom/Gandom.woff);
-    src: url(../assets/fonts/Gandom/Gandom.woff2);
+  font-family: Gandom;
+  src: url(../assets/fonts/Gandom/Gandom.ttf);
+  src: url(../assets/fonts/Gandom/Gandom.woff);
+  src: url(../assets/fonts/Gandom/Gandom.woff2);
 
-    /* FONTS END */
+  /* FONTS END */
 }
 
 /* body {
@@ -27,169 +27,216 @@
 
 /* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 header>div.container>nav>div.container-fluid>a>span {
-    font-family: BNazaninBold;
-    font-size: 35px;
-    font-weight: 900;
+  font-family: BNazaninBold;
+  font-size: 35px;
+  font-weight: 900;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a {
-    color: white;
-    font-size: 22px;
-    font-family: BNazaninBold;
-    transition-duration: 0.3s;
+  color: white;
+  font-size: 22px;
+  font-family: BNazaninBold;
+  transition-duration: 0.3s;
 }
 
-header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a{
-    color: #dd9746 !important;
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a {
+  color: #dd9746 !important;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve {
-    border: 2px solid #dd9746;
-    transition: 0.4s;
+  border: 2px solid #dd9746;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>span {
-    all: unset;
-    color: #dd9746;
-    font-weight: bolder;
-    font-size: 19px;
-    font-family: BNazaninBold;
-    transition: 0.4s;
+  all: unset;
+  color: #dd9746;
+  font-weight: bolder;
+  font-size: 19px;
+  font-family: BNazaninBold;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>.bi-arrow-up-right {
-    color: #dd9746;
-    transition: 0.4s;
+  color: #dd9746;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover {
-    background-color: white;
-    border: 2px solid white;
+  background-color: white;
+  border: 2px solid white;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a:hover,
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>span,
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
-    color: #dd9746;
+  color: #dd9746;
 }
 
 /* NAVBAR END */
 
-/* div.section{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+/* BOOKING SECTION START */
+.booking-section {
+  background-image: url('../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
-  .booking-section {
-    background-image: url('../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .booking-form-wrap {
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 100px;
-  }
-  
-  .booking-form {
-    padding: 55px 65px;
-  }
-  
-  .booking-form-image-wrap {
-    position: relative;
-    height: 100%;
-  }
-  
-  .booking-form-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .booking-form-text span {
-    color: #ffffff;
-    font-size: 16px;
-  }
-  
-  .reservation-page .custom-border-btn {
-    border-color: #DDA15E;
-    color: #DDA15E;
-  }
-  
-  .reservation-page .custom-border-btn:hover {
-    border-color: transparent;
-  }
+.booking-form-wrap {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
 
-  .custom-form .form-control {
-    color: #717275;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    box-shadow: none;
-    outline: none;
-    transition: all 0.3s;
-  }
-  
-  .custom-form .form-control:hover,
-  .custom-form .form-control:focus {
-    background: #BC6C25;
-    border-color: transparent;
-  }
-  
-  .custom-form .form-label {
-    color: #ffffff;
-    font-style: italic;
-    margin-bottom: 15px;
-  }
-  
-  .custom-form button[type="submit"] {
-    background: #BC6C25;
-    border: none;
-    border-radius: 100px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    transition: all 0.3s;
-    margin-bottom: 0;
-  }
-  
-  .custom-form button[type="submit"]:hover,
-  .custom-form button[type="submit"]:focus {
-    background: #ffffff;
-    border-color: transparent;
-    color: #BC6C25;
-  }
-  
-  .contact-form .form-control,
-  .booking-form .form-control {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.25);
-  }
-  
-  .booking-form .form-control {
-    color: #ffffff;
-  }
-  
-  .custom-form input::-webkit-input-placeholder,
-  .custom-form textarea::-webkit-input-placeholder {
-     color: #ffffff;
-     text-align: right;
-  }
-  
-  .booking-form input:-moz-placeholder,
-  .booking-form textarea:-moz-placeholder {
-    color: #ffffff;
-  }
+.booking-form {
+  padding: 55px 65px;
+}
+
+.booking-form-image-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.booking-form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reservation-page .custom-border-btn {
+  border-color: #DDA15E;
+  color: #DDA15E;
+}
+
+.reservation-page .custom-border-btn:hover {
+  border-color: transparent;
+}
+
+.custom-form .form-control {
+  color: #717275;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.custom-form .form-control:hover,
+.custom-form .form-control:focus {
+  background: #BC6C25;
+  border-color: transparent;
+}
+
+.custom-form button[type="submit"] {
+  background: #BC6C25;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: #ffffff;
+  border-color: transparent;
+  color: #BC6C25;
+}
+
+.custom-form em {
+  font-family: Gandom;
+}
+
+.custom-form h2 {
+  font-family: BNazaninBold;
+  font-size: 55px;
+}
+
+.booking-form .form-control {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.booking-form .form-control {
+  color: #ffffff;
+}
+
+.custom-form input::-webkit-input-placeholder,
+.custom-form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  text-align: right;
+  font-family: Gandom;
+
+}
+
+.booking-form input:-moz-placeholder,
+.booking-form textarea:-moz-placeholder {
+  color: #ffffff;
+}
+
+/* BOOKING SECTION START */
+
+/* FOOTER START */
+.footer {
+  background-color: #bc6c25;
+  color: white;
+}
+
+.footer .social-icons i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #ffae66;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.834);
+}
+
+.footer a:hover {
+  color: #ffae66;
+}
+
+.content {
+  text-align: center;
+}
+
+footer span {
+  font-family: BNazaninBold;
+  font-size: 18px;
+}
+
+footer p {
+  font-family: Gandom;
+}
+
+footer strong {
+  font-size: 17px;
+}
+
+p.address {
+  font-weight: bolder;
+}
+
+/* FOOTER END */
