@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 /* FONTS START */
 @font-face {
-    font-family: BNazaninBold;
-    src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
-    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
-    src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
+  font-family: BNazaninBold;
+  src: url(../assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
+  src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
+  src: url(../assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
 }
 
 @font-face {
-    font-family: Gandom;
-    src: url(../assets/fonts/Gandom/Gandom.ttf);
-    src: url(../assets/fonts/Gandom/Gandom.woff);
-    src: url(../assets/fonts/Gandom/Gandom.woff2);
+  font-family: Gandom;
+  src: url(../assets/fonts/Gandom/Gandom.ttf);
+  src: url(../assets/fonts/Gandom/Gandom.woff);
+  src: url(../assets/fonts/Gandom/Gandom.woff2);
 
-    /* FONTS END */
+  /* FONTS END */
 }
 
 /* body {
@@ -27,120 +27,252 @@
 
 /* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 header>div.container>nav>div.container-fluid>a>span {
-    font-family: BNazaninBold;
-    font-size: 35px;
-    font-weight: 900;
+  font-family: BNazaninBold;
+  font-size: 35px;
+  font-weight: 900;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a {
-    color: white;
-    font-size: 22px;
-    font-family: BNazaninBold;
-    transition-duration: 0.3s;
+  color: white;
+  font-size: 22px;
+  font-family: BNazaninBold;
+  transition-duration: 0.3s;
 }
 
-header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.contact-us{
-    color: #dd9746 !important;
+header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.contact-us {
+  color: #dd9746 !important;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve {
-    border: 2px solid white;
-    transition: 0.4s;
+  border: 2px solid white;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>span {
-    all: unset;
-    color: white;
-    font-weight: bold;
-    font-size: 19px;
-    font-family: BNazaninBold;
-    transition: 0.4s;
+  all: unset;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: BNazaninBold;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve>.bi-arrow-up-right {
-    color: white;
-    transition: 0.4s;
+  color: white;
+  transition: 0.4s;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover {
-    background-color: white;
+  background-color: white;
 }
 
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a:hover,
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>span,
 header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.reserve-a>button.reserve:hover>.bi-arrow-up-right {
-    color: #dd9746;
+  color: #dd9746;
 }
 
 /* NAVBAR END */
 
+/* CONTACT US SECTION START */
+.main-section .background {
+  background-image: url(../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
 
 .contact-section {
-    background-image: url(../assets/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    color: white;
+  width: 100%;
+  height: 100%;
+  color: white;
+  top: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+}
 
+.contact-title {
+  font-size: 1.rem;
+  margin-bottom: 4px;
+  font-family: Gandom;
+}
+
+.contact-heading {
+  font-size: 3.3rem;
+  margin-bottom: 30px;
+  font-family: BNazaninBold;
+}
+
+.contact-form label {
+  color: white;
+  font-family: Gandom;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: unset;
+  outline-width: 1px;
+  outline-color: rgba(255, 255, 255, 0.267);
+  outline-style: solid;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.contact-form input.form-control:hover,
+.contact-form input.form-control:focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
+  background: #BC6C25;
+  border-color: transparent;
+  outline-color: #BC6C25;
+  box-shadow: unset;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white;
+  font-family: Gandom;
+}
+
+.btn-primary {
+  background-color: #bc6c25;
+  margin-top: 20px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  font-family: BNazaninBold;
+  font-size: 23px;
+  border: none;
+  transition: all 0.3s;
+}
+.send-button button[type="submit"]:hover,
+.send-button button[type="submit"]:focus {
+  background: #ffffff;
+  border-color: transparent;
+  color: #BC6C25;
+}
+
+.map-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+iframe {
+  border-radius: 20px;
+}
+/* CONTACT US SECTION END */
+
+/* FOOTER START */
+.footer {
+  background-color: #bc6c25;
+  color: white;
+}
+
+.footer .social-icons i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #ffae66;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.834);
+}
+
+.footer a:hover {
+  color: #ffae66;
+}
+
+.content {
+  text-align: center;
+}
+
+footer span {
+  font-family: BNazaninBold;
+  font-size: 18px;
+}
+
+footer p {
+  font-family: Gandom;
+}
+
+footer strong {
+  font-size: 17px;
+}
+
+p.address {
+  font-weight: bolder;
+}
+/* FOOTER END */
+
+/* MEDIA START */
+@media (max-width: 768px) {
+  .main-section .background {
+    height: 190vh;
   }
-  
-  .contact-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+  .all{
+    margin-top: 150px;
   }
-  
-  .contact-heading {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form label {
-    color: white;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: white;
-    padding: 10px;
-  }
-  
-  .contact-form input::placeholder,
-  .contact-form textarea::placeholder {
-    color: #ccc;
-  }
-  
+
   .btn-primary {
-    background-color: #ff6600;
-    border: none;
-  }
-  
-  .map-container {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  iframe{
-    border-radius: 10px;
+   width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .contact-section {
-      padding: 30px 0;
-    }
-  
-    .contact-title {
-      font-size: 2rem;
-    }
-  
-    .contact-heading {
-      font-size: 1.5rem;
-    }
+  iframe {
+    width: 100%;
   }
+  
+  .contact-section {
+    padding: 30px 0;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-section .background {
+    height: 185vh;
+  }
+
+  .all{
+    margin-top: 150px;
+  }
+
+  .btn-primary {
+    width: 100%;
+   }
+
+   iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+/* MEDIA END */
