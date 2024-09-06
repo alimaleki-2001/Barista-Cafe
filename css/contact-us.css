@@ -229,11 +229,11 @@ p.address {
 /* MEDIA START */
 @media (max-width: 768px) {
   .main-section .background {
-    height: 190vh;
+    height: 145vh;
   }
 
   .all{
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .btn-primary {
@@ -259,11 +259,11 @@ p.address {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .main-section .background {
-    height: 185vh;
+    height: 145vh;
   }
 
   .all{
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .btn-primary {
