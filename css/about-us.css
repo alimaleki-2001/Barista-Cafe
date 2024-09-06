@@ -21,10 +21,6 @@
     /* FONTS END */
 }
 
-/* body {
-    background-color: #4c3a22;
-} */
-
 /* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
     filter: brightness(0) invert(1);
