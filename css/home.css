@@ -209,8 +209,12 @@ div.section-1>div.container>div.baristas>div.photo-1,
 div.section-1>div.container>div.baristas>div.photo-2,
 div.section-1>div.container>div.baristas>div.photo-3,
 div.section-1>div.container>div.baristas>div.photo-4 {
-    width: fit-content;
+    width: 300px;
+    height: fit-content;
     bottom: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
 }
 
 div.section-1>div.container>div.baristas>div.photo-1>img,
@@ -218,9 +222,18 @@ div.section-1>div.container>div.baristas>div.photo-2>img,
 div.section-1>div.container>div.baristas>div.photo-3>img,
 div.section-1>div.container>div.baristas>div.photo-4>img {
     object-fit: cover;
-    width: 300px;
-    height: fit-content;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
+}
+
+div.section-1>div.container>div.baristas>div.photo-1:hover>img,
+div.section-1>div.container>div.baristas>div.photo-2:hover>img,
+div.section-1>div.container>div.baristas>div.photo-3:hover>img,
+div.section-1>div.container>div.baristas>div.photo-4:hover>img {
+    transform: scale(1.3);
 }
 
 div.section-1>div.container>div.baristas>div.photo-1>div.overlay,
@@ -228,7 +241,10 @@ div.section-1>div.container>div.baristas>div.photo-2>div.overlay,
 div.section-1>div.container>div.baristas>div.photo-3>div.overlay,
 div.section-1>div.container>div.baristas>div.photo-4>div.overlay {
     top: 0;
-    width: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
@@ -240,6 +256,8 @@ div.section-1>div.container>div.baristas>div.photo-3>div.overlay>div.the-head,
 div.section-1>div.container>div.baristas>div.photo-4>div.overlay>div.the-head {
     bottom: 80px;
     right: 30px;
+    margin-bottom: 10px;
+    text-align: right;
 }
 
 div.section-1>div.container>div.baristas>div.photo-1>div.overlay>div.the-head>h4,
@@ -273,6 +291,7 @@ div.section-1>div.container>div.baristas>div.photo-3>div.overlay>div.the-text,
 div.section-1>div.container>div.baristas>div.photo-4>div.overlay>div.the-text {
     bottom: 28px;
     right: 30px;
+    text-align: right;
 }
 
 div.section-1>div.container>div.baristas>div.photo-1>div.overlay>div.the-text>p,
