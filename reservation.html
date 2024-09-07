@@ -2,119 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>رزرو</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/reservation.css"/>
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رزرو</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/reservation.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
-    <main>
+  <main>
     <!-- header start -->
     <header>
-        <!-- nav start -->
-        <div class="container">
-          <nav class="navbar col-10 fixed-top mx-auto mt-4 p-3 rounded-4 navbar-expand-lg navbar-dark"
-            style="background-color: rgba(0, 0, 0, 0.466);">
-            <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center gap-3" href="./home.html">
-                <img src="assets/images/coffee-beans.png" alt="Logo" width="55" height="51"
-                  class="d-inline-block align-text-top">
-                <span>باریستا</span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
-                style="border: none;">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto links">
-                  <a class="nav-link mx-4 active" href="./contact-us.html">ارتباط با ما</a>
-                  <a class="nav-link mx-4" href="./home.html#reviews">نظرات</a>
-                  <a class="nav-link mx-4" href="./home.html#our-menu">منو</a>
-                  <a class="nav-link mx-4" href="./about-us.html">درباره ما</a>
-                  <a class="nav-link home me-5 ms-4" href="./home.html">خانه</a>
-  
-                  <a class="reserve-a active" aria-current="page" href="./reservation.html" style="text-decoration: none;">
-                    <button class="btn reserve rounded-5 pe-4 ps-4 pb-2">
-                      <span>رزرو</span>
-                      <i class="bi bi-arrow-up-right ms-2"></i>
-                    </button>
-                  </a>
-                </div>
+      <!-- nav start -->
+      <div class="container">
+        <nav class="navbar col-10 fixed-top mx-auto mt-4 p-3 rounded-4 navbar-expand-lg navbar-dark"
+          style="background-color: rgba(0, 0, 0, 0.466);">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="./home.html">
+              <img src="assets/images/coffee-beans.png" alt="Logo" width="55" height="51"
+                class="d-inline-block align-text-top">
+              <span>باریستا</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+              style="border: none;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto links">
+                <a class="nav-link mx-4 active" href="./contact-us.html">ارتباط با ما</a>
+                <a class="nav-link mx-4" href="./home.html#reviews">نظرات</a>
+                <a class="nav-link mx-4" href="./home.html#our-menu">منو</a>
+                <a class="nav-link mx-4" href="./about-us.html">درباره ما</a>
+                <a class="nav-link home me-5 ms-4" href="./home.html">خانه</a>
+
+                <a class="reserve-a active" aria-current="page" href="./reservation.html"
+                  style="text-decoration: none;">
+                  <button class="btn reserve rounded-5 pe-4 ps-4 pb-2">
+                    <span>رزرو</span>
+                    <i class="bi bi-arrow-up-right ms-2"></i>
+                  </button>
+                </a>
               </div>
             </div>
-          </nav>
-        </div>
-        <!-- nav end -->
+          </div>
+        </nav>
+      </div>
+      <!-- nav end -->
     </header>
     <!-- header end -->
 
     <!-- BOOKING SECTION START -->
     <section class="booking-section section-padding">
       <div class="container">
-          <div class="row">
+        <div class="row">
 
-              <div class="col-lg-10 col-12 mx-auto">
-                  <div class="booking-form-wrap">
+          <div class="col-lg-10 col-12 mx-auto">
+            <div class="booking-form-wrap">
+              <div class="row">
+                <div class="col-lg-7 col-12 p-0">
+                  <form class="custom-form booking-form" action="#" method="post" role="form">
+                    <div class="text-center mb-4 pb-lg-2">
+                      <em class="text-white">فرم رزرو را پر کنید</em>
+
+                      <h2 class="text-white">رزرو میز</h2>
+                    </div>
+
+                    <div class="booking-form-body" dir="rtl">
                       <div class="row">
-                          <div class="col-lg-7 col-12 p-0">
-                              <form class="custom-form booking-form" action="#" method="post" role="form">
-                                  <div class="text-center mb-4 pb-lg-2">
-                                      <em class="text-white">فرم رزرو را پر کنید</em>
+                        <div class="col-lg-6 col-12">
+                          <input type="text" name="booking-form-name" id="booking-form-name" class="form-control"
+                            placeholder="نام و نام خانوادگی" required>
+                        </div>
 
-                                      <h2 class="text-white">رزرو میز</h2>
-                                  </div>
+                        <div class="col-lg-6 col-12">
+                          <input type="tel" class="form-control" name="booking-form-phone"
+                            placeholder="شماره همراه: ۰٩٢٣۴٥۶٧٨٩" maxlength="11" required>
+                        </div>
 
-                                  <div class="booking-form-body" dir="rtl">
-                                      <div class="row">
-                                          <div class="col-lg-6 col-12">
-                                              <input type="text" name="booking-form-name" id="booking-form-name" class="form-control" placeholder="نام و نام خانوادگی" required>
-                                          </div>
+                        <div class="col-lg-6 col-12">
+                          <input class="form-control" type="time" name="booking-form-time" value="18:30">
+                        </div>
 
-                                          <div class="col-lg-6 col-12">
-                                              <input type="tel" class="form-control" name="booking-form-phone" placeholder="شماره همراه: ۰٩٢٣۴٥۶٧٨٩" maxlength="11" required>
-                                          </div>
+                        <div class="col-lg-6 col-12">
+                          <input type="date" name="booking-form-date" id="booking-form-date" class="form-control"
+                            placeholder="تاریخ" required>
+                        </div>
 
-                                          <div class="col-lg-6 col-12">
-                                              <input class="form-control" type="time" name="booking-form-time" value="18:30">
-                                          </div>
+                        <div class="col-lg-12 col-12">
+                          <input type="number" name="booking-form-number" id="booking-form-number" class="form-control"
+                            placeholder="تعداد افراد" min="1" max="20" required>
 
-                                          <div class="col-lg-6 col-12">
-                                              <input type="date" name="booking-form-date" id="booking-form-date" class="form-control" placeholder="تاریخ" required>
-                                          </div>
+                          <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message"
+                            placeholder="نظرات (اختیاری)"></textarea>
+                        </div>
 
-                                          <div class="col-lg-12 col-12">
-                                              <input type="number" name="booking-form-number" id="booking-form-number" class="form-control" placeholder="تعداد افراد" min="1" max="20" required>
-
-                                              <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message" placeholder="نظرات (اختیاری)"></textarea>
-                                          </div>
-
-                                          <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
-                                              <button type="submit" class="form-control">ثبت</button>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-
-                          <div class="col-lg-5 col-12 p-0">
-                              <div class="booking-form-image-wrap">
-                                  <img src="./assets/images/barman-with-fruits.jpg" class="booking-form-image img-fluid" alt="">
-                              </div>
-
-                          </div>
+                        <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
+                          <button type="submit" class="form-control">ثبت</button>
+                        </div>
                       </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-lg-5 col-12 p-0">
+                  <div class="booking-form-image-wrap">
+                    <img src="./assets/images/barman-with-fruits.jpg" class="booking-form-image img-fluid" alt="">
                   </div>
 
+                </div>
               </div>
+            </div>
+
           </div>
+        </div>
     </section>
     <!-- BOOKING SECTION END -->
 
-          <!-- FOOTER START -->
+    <!-- FOOTER START -->
     <footer class="footer text-white text-center text-lg-start">
       <div class="container p-4">
         <div class="row">
@@ -176,10 +182,10 @@
     </footer>
     <!-- FOOTER END -->
 
-    </main>
+  </main>
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
