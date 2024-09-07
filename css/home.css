@@ -4,28 +4,6 @@
     box-sizing: 0;
 }
 
-/* @keyframes slideAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    40% {
-        opacity: 1;
-    }
-
-    60% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-} */
-
 /* FONTS START */
 @font-face {
     font-family: BNazaninBold;
@@ -42,6 +20,36 @@
 }
 
 /* FONTS END */
+
+/* ANIMATION START */
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    60% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+/* ANIMATION END */
 
 /* NAVBAR START */
 header>div.container>nav>div.container-fluid>a>img {
@@ -100,13 +108,41 @@ header>div.container>nav>div.container-fluid>div.navbar-collapse>div.links>a.res
 div.backgraounds {
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideAnimation 12s infinite;
+    animation-timing-function: linear;
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 8s;
 }
 
 header>div.backgraounds>div.container {
     margin-top: 190px;
+    z-index: 1;
 }
 
 header>div.backgraounds>div.container>div.row {
