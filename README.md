@@ -1,2 +1,2 @@
 # Barista-Cafe
-This project is written by Ali Maleki using css and bootstrap 5
+This project is written by Ali Maleki using CSS and Bootstrap 5 (Fully Responsive)
